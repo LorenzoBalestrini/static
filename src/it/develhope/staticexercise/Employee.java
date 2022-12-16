@@ -1,7 +1,11 @@
 package it.develhope.staticexercise;
+
+import lombok.Data;
+
+@Data
 public class Employee {
-    public String name;
-    public String surname;
+    private String name;
+    private String surname;
     private String address;
 
     public Employee(String newEmployeeName, String newEmployeeSurname, String newEmployeeAddress){

@@ -5,14 +5,14 @@ public class Badge {
 
     private static int totalNumberOfEmployees;
     private String badgeIdCode;
-    public Employee employee;
+    private Employee employee;
 
     private static void keepTrackOfEmployeesNumber(){
         totalNumberOfEmployees += 1;
     }
 
     private String generateBadgeIdCode(){
-        return "xyz" + employee.name + employee.surname + "zyz";
+        return "xyz" + employee.getName() + employee.getSurname() + "zyz";
     }
 
     public void showBadgeDetails(){
